@@ -1,0 +1,134 @@
+
+
+.gallary{
+   position: relative;
+   overflow: hidden;
+}
+.gallary img{
+
+}
+.gallary h1{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    color: #e0ef00;
+    font-size: 25px;
+    opacity: 0;
+    transition: .4s linear;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+.gallary a.btn{
+    position: absolute;
+
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    color: white;
+    opacity: 0;
+    transition: .5s linear;
+}
+.gallary:hover a.btn{
+    bottom: 35%;
+    transform: translate(-50%, 35%);
+    opacity: 1;}
+
+    .gallary:hover h1{bottom: 50%;
+        transform: translate(-50%, 50%);
+        opacity: 1;
+    }
+    .offer{
+        position: absolute;
+        top: -90px;
+        right: -60px;
+        
+        color: white;
+        background: #07531e;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        
+        border-radius: 200px;
+        opacity: 1;
+        transition: .3s linear;
+    }
+    .gallary:hover .offer{
+        opacity: 0;
+         
+    
+        top: -120px;
+        right: -100px;
+    
+    
+    }
+    .offer h4{
+        font-size: 20px;
+        padding-bottom: 35px;
+        padding-left: 42px;
+    text-align: center;
+    }
+   .banner{ margin: 100px auto;
+overflow: hidden;}
+  .banner img{
+    height: 800px;
+    object-fit: cover;
+    
+    transform: scale(1);
+   animation-name: zoom;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+animation-timing-function: linear;
+   animation-direction: alternate;
+  }
+  .banner:hover img{
+      
+  }
+  @keyframes zoom {
+    from{transform:scale(1)}
+
+to{transform:scale(1.4)}
+
+
+}
+.shape{width: 40px;
+    height: 40px;
+    background:#339e77ad;
+    display: block;
+    position: fixed;
+    border-radius: 5px;
+    transform: rotate(15deg);
+    top: 50%;
+    left: 100px;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name:shape;
+    animation-duration: 50s;
+      z-index: 1;}
+
+    @keyframes shape{
+        0%{ transform: rotate(15deg);
+            top: 50%;
+            left: 100px;}
+        20%{
+            transform:  rotate(45deg);
+            top: 30%;
+            left: 10%;
+            }
+            40%{transform:  rotate(75deg);
+                top: 20%;
+                left: 40%;}
+            60%{transform: rotate(95deg);
+            top: 10%;
+            left: 60%;}
+            80%{transform:  rotate(1155deg);
+                top: 0%;
+                left: 80%;}
+            100%{transform:  rotate(145deg);
+                top: -10%;
+                left: 90%;}
+    }
